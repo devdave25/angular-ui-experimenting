@@ -9,7 +9,9 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "lint": "ng lint",
-    "storybook": "start-storybook"
+    "storybook": "start-storybook",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "private": true,
   "dependencies": {
@@ -26,6 +28,7 @@
     "@storybook/addon-knobs": "^5.3.19",
     "@storybook/addon-options": "^5.3.19",
     "@storybook/cli": "^5.3.19",
+    "core-js": "^3.6.5",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
@@ -36,17 +39,25 @@
     "@angular/compiler-cli": "~10.0.4",
     "@angular/material": "^10.0.2",
     "@babel/core": "^7.10.5",
+    "@cypress/webpack-preprocessor": "^5.4.1",
     "@storybook/angular": "^5.3.19",
     "@types/jest": "^26.0.4",
     "@types/node": "^12.11.1",
+    "angular2-template-loader": "^0.6.2",
     "babel-loader": "^8.1.0",
     "codelyzer": "^6.0.0",
+    "cypress": "^4.10.0",
+    "cypress-angular-unit-test": "^2.0.0",
+    "html-loader": "^1.1.0",
     "jest": "^26.1.0",
     "jest-preset-angular": "^8.2.1",
     "protractor": "~7.0.0",
+    "to-string-loader": "^1.1.6",
+    "ts-loader": "^8.0.1",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
-    "typescript": "~3.9.5"
+    "typescript": "~3.9.5",
+    "webpack": "^4.43.0"
   },
   "jest": {
     "preset": "jest-preset-angular",
