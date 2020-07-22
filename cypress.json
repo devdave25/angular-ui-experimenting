@@ -1,7 +1,15 @@
 {
-  "experimentalComponentTesting": true,
-  "componentFolder": "src",
-  "testFiles": "**/*cy-spec.*",
+  "baseUrl": "http://localhost:4200",
   "fixturesFolder": false,
-  "pluginsFile": false
+  "testFiles": "**/*cy-spec.{js,jsx,ts,tsx}",
+  "viewportWidth": 500,
+  "viewportHeight": 800,
+  "video": false,
+  "ignoreTestFiles": [
+    "**/__snapshots__/*",
+    "**/__image_snapshots__/*"
+  ],
+  "env": {
+    "coverage": false
+  }
 }
