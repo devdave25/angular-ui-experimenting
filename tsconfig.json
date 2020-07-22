@@ -5,22 +5,13 @@
   To learn more about this file see: https://angular.io/config/solution-tsconfig.
 */
 {
-  "files": [
-    "src/main.ts",
-    "src/polyfills.ts"
-  ],
-  "include": [
-    "src/**/*.spec.ts",
-    "src/**/*.d.ts"
-  ],
-  "compilerOptions": {
-    // "experimentalDecorators": true,
-    // "allowJs": false,
-    "outDir": "./out-tsc",
-    "types": [
-        "jest",
-        "node"
-    ],
-    "module": "commonjs"
-  }
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.spec.json"
+    }
+  ]
 }
