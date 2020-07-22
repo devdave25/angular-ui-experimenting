@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./textbox.component.scss']
 })
 export class TextboxComponent implements OnInit {
+    value;
+    autocomplete = 'off';
 
     constructor() { }
 
